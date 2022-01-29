@@ -2,7 +2,93 @@
   --primary-dark: #000000;
   --primary-light: #f7f7f7;
   --secondary-light: #fafafa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/*page layout*/
+
+header {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 35px;
+  background-image: linear-gradient(135deg, #008aff, #86d472);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.toolkit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.colorPicker {
+  height: 50px;
+  width: 50px;
+  background-color: #fafafa;
+  margin-bottom: 15px;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* button design*/
+button {
+  background-image: linear-gradient(135deg, #008aff, #86d472);
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #008aff;
+  display: block;
+  height: 50px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 150px;
+  z-index: 2;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button .buttonSpan {
+  align-items: center;
+  background: #f7f7f7;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+button:hover .buttonSpan {
+  background: transparent;
+}
+
+.size {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*Grid Design*/
 
 .gridContainer {
   display: flex;
