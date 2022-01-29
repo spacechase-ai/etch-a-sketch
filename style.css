@@ -1,0 +1,25 @@
+:root {
+  --primary-dark: #000000;
+  --primary-light: #f7f7f7;
+  --secondary-light: #fafafa;
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: var(--secondary-light);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  flex: 1;
+}
