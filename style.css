@@ -1,7 +1,4 @@
 :root {
-  --primary-dark: #000000;
-  --primary-light: #f7f7f7;
-  --secondary-light: #fafafa;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -15,6 +12,7 @@ header {
   font-size: 35px;
   background-image: linear-gradient(135deg, #008aff, #86d472);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .content {
@@ -29,7 +27,7 @@ header {
   margin-right: 30px;
 }
 
-.colorPicker {
+#colorPicker {
   height: 50px;
   width: 50px;
   background-color: #fafafa;
@@ -95,10 +93,8 @@ button:hover .buttonSpan {
   flex-direction: column;
   width: 500px;
   height: 500px;
-  background-color: var(--secondary-light);
+  background-color: #fafafa;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  grid-template-rows: repeat(var(--grid-rows), 1fr);
-  grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
 .row {
